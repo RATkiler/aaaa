@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kucing</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Canvas untuk efek Matrix Rain -->
+  <canvas id="matrixCanvas"></canvas>
+  
+  <!-- Wrapper Layout: Sidebar + Main Content -->
+  <div class="wrapper">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+      <h2>opsi bawah</h2>
+      <nav class="nav-menu">
+        <a href="admindana.html">Database Dana</a>
+        <a href="adminfb.html">Database FB</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Header dengan Hamburger untuk Mobile -->
+      <header class="header">
+        <button class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <h1>hello friends</h1>
+      </header>
+      
+      <section class="content">
+        <p>Selamat datang di pusat database</p>
+        <p>Ketik <span class="command">help</span> untuk melihat perintah yang tersedia.</p>
+      </section>
+      
+      <footer class="footer">
+        <p>&copy; 2025 Admin Panel - Matrix Edition</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

